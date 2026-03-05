@@ -2,14 +2,14 @@
 
 A robust, production-ready Spring Boot backend designed for efficient warehouse and inventory management. This project demonstrates a complete three-tier architecture with a focus on data integrity, containerization, and professional API standards.
 
-## 🚀 Key Features
+## Key Features
 
 - **Transactional Stock Movement**: Implemented `@Transactional` logic to ensure "all-or-nothing" stock transfers between warehouses, preventing data loss.
 - **Containerized Infrastructure**: Fully dockerized environment using Docker Compose for seamless database and application orchestration.
 - **Professional API Standards**: Automated documentation via Swagger/OpenAPI and optimized data fetching through Pagination and Sorting.
 - **Data Integrity**: Used JPA/Hibernate with `@JsonIgnoreProperties` to manage complex bi-directional relationships without infinite recursion.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Java 21, Spring Boot 3.2.4
 - **Database**: PostgreSQL
@@ -17,7 +17,7 @@ A robust, production-ready Spring Boot backend designed for efficient warehouse 
 - **Security**: Spring Security (Basic Auth / PermitAll for Dev)
 - **Documentation**: Springdoc-OpenAPI (Swagger UI)
 
-## 📥 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -51,7 +51,7 @@ Once the application is running, access the interactive documentation at: <br>
 http://localhost:8080/swagger-ui/index.html <br>
 
 | Method | Endpoint |	Description |
-| :--- | :----: | ---: |
+| :--- | :---- | :--- |
 | GET | /api/inventory/all | Fetch all inventory items (Global view) |
 | GET | /api/inventory/paginated | Fetch inventory with pagination support |
 | POST | /api/inventory/add | Add initial stock to a specific warehouse |
